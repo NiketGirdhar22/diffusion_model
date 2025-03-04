@@ -7,7 +7,8 @@ Denoising Diffusion Probablistic Models belong to a class of neural networks - G
     - Incrementally adds noise to an image
     - Neural network is setup that tries to reverse the diffusion which generates image
 - [Understand Diffusion Models better](https://arxiv.org/pdf/2006.11239)
-
+- Diffusion Model is also known by the name of Variational AutoEncoder (VAE)
+- [Understanding AutoEncoders](AutoEncoders.md)
 ---
 
 ***Metric sed to access the quality of mages created by the generative model is FID : Fréchet Inception Distance, Perfect FID score is 0.0. Lower the FID Score better the generated images are***
@@ -84,3 +85,11 @@ The neural network learns this process by learning the mean and variance of the 
 
 ## Training a Diffusion Model: Intution
 
+- Training a Diffusion model involves using a Neural Network ti apploximate the Reverse Diffusion
+- The forward diffusion process looks similar to that of the encoder entwork of the Variational AutoEncoders
+- The reverse process looks similar to that of the decoder of the Variational AutoEncoders
+- The difference between the VAEs and Diffusion model lies in the forward diffusion process where the noise is added in a very specific way.
+
+---
+
+[CODE IMPLEMENTATION](https://drive.google.com/drive/folders/10KeH00qdy70mv61fjln_ztrBbVCsWYmw?usp=sharing)
